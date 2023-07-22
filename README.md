@@ -2,6 +2,10 @@
 
 
 
+
+
+
+
 #include <WiFi.h>
 #include <HTTPClient.h>
 
@@ -10,10 +14,6 @@ const char* password = "";
 
 const String url = "https://raw.githubusercontent.com/MohammadShnaimar/T1-iot/main/S.html";
 String payload = "";
-//https://raw.githubusercontent.com/MohammadShnaimar/T1-iot/main/F.html
-//https://raw.githubusercontent.com/MohammadShnaimar/T1-iot/main/T.html
-//https://raw.githubusercontent.com/MohammadShnaimar/T1-iot/main/R.html
-//can use anyone to test
 // Define LED pins
 const int ledPinF1 = 25;  // LED for letter F
 const int ledPinF2 = 26;  // LED for letter R
