@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": 13.34, "left": -33.52, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -4.78,
+      "left": -111.44,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": 35.89,
+      "left": -110.56,
+      "attrs": { "color": "yellow" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led3",
+      "top": 87.93,
+      "left": -108.58,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led4",
+      "top": 139.68,
+      "left": -107,
+      "attrs": { "color": "orange" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX0", "$serialMonitor:TX", "", [] ],
+    [ "led1:A", "esp:D25", "green", [ "v-4.84", "h35.42", "v69.87" ] ],
+    [ "led2:A", "esp:D26", "green", [ "v0.26", "h30", "v32.14" ] ],
+    [ "led3:A", "esp:D27", "green", [ "v-0.07", "h6.01", "v-5.94" ] ],
+    [ "led4:A", "esp:D33", "green", [ "v3.03", "h41.46", "v-88.74" ] ],
+    [ "esp:GND.2", "led4:C", "black", [ "h-13.42", "v23.77" ] ],
+    [ "esp:GND.2", "led3:C", "black", [ "h-11.32", "v-21.3", "h-53.1" ] ],
+    [ "esp:GND.2", "led2:C", "black", [ "h-32.63", "v-77.55", "h-4.89" ] ],
+    [ "esp:GND.2", "led1:C", "black", [ "h-38.22", "v-117.03", "h-3.84" ] ]
+  ],
+  "dependencies": {}
+}
