@@ -2,6 +2,17 @@
 
 
 
+يمكنك تغير الرابط لتجربه جميع الليدات من الروابط هاذ:
+https://raw.githubusercontent.com/MohammadShnaimar/T1-iot/main/F.html
+
+https://raw.githubusercontent.com/MohammadShnaimar/T1-iot/main/T.html
+
+https://raw.githubusercontent.com/MohammadShnaimar/T1-iot/main/R.html
+
+
+
+
+هاذ الكود المستخدم:
 #include <WiFi.h>
 #include <HTTPClient.h>
 
